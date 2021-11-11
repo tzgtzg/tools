@@ -22,11 +22,20 @@ def md5_file():
 			 print localPath
 			 print  md5str
    
+def test():
+	testStr="11111"
+	strs="Jimu-guanwang-20211109142721.apk"
+	splitArr =strs.split('-')
+	print("splitArr  ", splitArr[0])
+	print("splitArr  ", splitArr[1])
+	testStr = "%s%s"%(testStr,splitArr[1])
+	print("testStr  ", testStr)
 
 if __name__ == '__main__':
 	parser = OptionParser()
 	parser.add_option("-f", "--filepath", dest="md5file_param", help='md5  file  path', action="append")
 	(opts, args) = parser.parse_args()
 	md5_file()
+	test()
 	
 	print "end    end   end "
