@@ -9,6 +9,11 @@ import shutil
 from hashlib import md5
 from optparse import OptionParser
 currentPath =os.getcwd()
+
+
+def test():
+	print 1111111
+
 def md5_file():
     for dir in [x for x in os.listdir(currentPath)]:
 		localPath = os.path.join(currentPath, dir)
